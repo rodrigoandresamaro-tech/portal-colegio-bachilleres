@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyes de Newton - Rodrigo Andres Amaro Juarez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --newton-dark: #1a1a2e; /* Azul muy oscuro */
+            --newton-blue: #0f3460; /* Azul cobalto */
+            --newton-cyan: #16213e; /* Azul petróleo */
+            --newton-accent: #4cc9f0; /* Celeste brillante */
+            --newton-neon: #72efdd; /* Verde neón suave */
+        }
+
+        body {
+            background-color: #e9ecef;
+            color: var(--newton-dark);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+
+        .jumbotron-wwii {
+            background-color: var(--newton-dark);
+            color: white;
+            padding: 80px 20px;
+            border-radius: 10px;
+            text-align: center;
+            border-bottom: 8px solid var(--newton-accent); 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .jumbotron-wwii h1 {
+            color: var(--newton-neon);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .jumbotron-wwii .autor-nombre {
+            color: var(--newton-neon);
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-top: 15px;
+            display: inline-block;
+            border-top: 1px solid #555;
+            padding-top: 10px;
+        }
+
+        .btn-wwii {
+            background-color: var(--newton-accent);
+            border-color: var(--newton-accent);
+            color: var(--newton-dark);
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 12px 30px;
+            transition: 0.3s;
+        }
+        .btn-wwii:hover {
+            background-color: var(--newton-neon);
+            border-color: var(--newton-neon);
+            color: black;
+        }
+
+        .wwii-card {
+            background-color: white;
+            border: 2px solid var(--newton-blue);
+            border-radius: 8px;
+            height: 100%;
+            transition: 0.3s;
+        }
+        .wwii-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--newton-accent);
+        }
+        .wwii-card-header {
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* Colores para las leyes */
+        .causas-head { background-color: #4361ee; }
+        .bandos-head { background-color: #3a0ca3; }
+        .consecuencias-head { background-color: #4cc9f0; }
+
+        footer {
+            background-color: var(--newton-dark);
+            color: #aaa;
+            padding: 40px 20px;
+            border-top: 5px solid var(--newton-neon);
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">CIENCIA Y FÍSICA</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="jumbotron-wwii mb-5 rounded-3">
+            <div class="container-fluid py-3">
+                <h1 class="display-3 fw-bold">LEYES DE NEWTON</h1>
+                <p class="fs-4">Los principios fundamentales que rigen el movimiento y la dinámica en el universo clásico.</p>
+                
+                <p class="autor-nombre">RODRIGO ANDRES AMARO JUAREZ</p> 
+                
+                <hr class="my-4" style="border-color: #555;">
+                <p>Exploración de la Inercia, la Fuerza y el Principio de Acción-Reacción.</p>
+                
+                <a href="cronica_leyes.php" class="btn btn-wwii btn-lg">Ver Guía Completa</a>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+            <div class="col">
+                <div class="wwii-card shadow-sm">
+                    <div class="wwii-card-header causas-head">1ª Ley: Inercia</div>
+                    <div class="card-body p-4">
+                        <p>Todo cuerpo permanece en reposo o movimiento rectilíneo uniforme a menos que una fuerza externa actúe sobre él.</p>
+                        <a href="inercia.php" class="btn btn-sm btn-outline-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="wwii-card shadow-sm">
+                    <div class="wwii-card-header bandos-head">2ª Ley: Dinámica</div>
+                    <div class="card-body p-4">
+                        <p>La aceleración de un objeto es directamente proporcional a la fuerza neta e inversamente proporcional a su masa.</p>
+                        <a href="dinamica.php" class="btn btn-sm btn-outline-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="wwii-card shadow-sm">
+                    <div class="wwii-card-header consecuencias-head">3ª Ley: Acción-Reacción</div>
+                    <div class="card-body p-4">
+                        <p>A cada acción siempre se opone una reacción igual, pero en sentido contrario, sobre cuerpos diferentes.</p>
+                        <a href="accion_reaccion.php" class="btn btn-sm btn-outline-info">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <div class="container">
+            <p>Trabajo realizado por: <strong style="color: var(--newton-neon);">Rodrigo Andres Amaro Juarez</strong></p>
+            <p class="small">Reto de Aula 4 - 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
